@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import "_variables";
+@import "_default";
+
+.welcome {
+     text-align: center;
+}
+.content{
+    h1{
+        padding-top: 10px;
+    }
+    p{
+        padding-bottom: 30px;
+    }
+}
+.top-bar {
+    font-size: 14px;
+    padding: 10px 0;
+
+    .email {
+        margin-right: 5px;
+    }
+
+    .login-user {
+        // float: right;
+        text-align: right;
+    }
+}
+.navbar-nav {
+    .navbar-nav {
+        padding-left: 230px;
+    }
+    a {
+        text-transform: uppercase;
+    }
+    .users{
+        position: relative;
+        margin-right: 20px;
+        .badge{
+            position: absolute;
+            right: -16px;
+            bottom: 12px;
+            color: #fff;
+            background-color: $color-blue;
+            font-size: 12px;
+            border-radius: 50px;
+        }
+    }
+    .inbox{
+        position: relative;
+        .badge{
+            position: absolute;
+            right: -16px;
+            bottom: 12px;
+            color: #fff;
+            background-color: $color-blue;
+            font-size: 12px;
+            border-radius: 50px;
+        }
+    }
+}
+.main-form {
+    padding-top: 40px;
+    input {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        // border-bottom: 1px solid #ccc;
+        // transition: 0.8s;
+        &:focus {
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            // border-bottom: 1px solid $color-blue;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    select{
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        // border-bottom: 1px solid #ccc;
+        // transition: 0.8s;
+        &:focus {
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            // border-bottom: 1px solid $color-blue;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    .form-control {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $color-blue;
+    }
+    .image-file{
+        text-align: left;
+    }
+    .form-control-file{
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+    }
+    textarea {
+        resize: none;
+        background-color: transparent;
+        border-radius: 0;
+
+        &:focus {
+            background-color: transparent;
+            border-radius: 0;
+            box-shadow: none;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    .btn {
+        width: 100%;
+        border-radius: 12px;
+    }
+    .message {
+        margin-top: 20px;
+    }
+    .error {
+        color: red;
+    }
+}
+table{
+    margin-top: 50px;
+    font-size: 14px;
+    padding: 0;
+}
+#message-modal,
+#information-modal,
+#add-movie-modal,
+#delete-modal,
+#logout-modal{
+    margin-top: 70px;
+    .modal-body{
+        text-align: center;
+    }
+    .modal-footer{
+        border-top: none;
+        .btn{
+        width: 100%;
+        border-radius: 12px;
+        }
+    }
+}
+.search-form{
+    label{
+        text-align: left;
+        font-size: 15px;
+    }
+}
+.users {
+    table {
+        margin-bottom: 50px;
+    }
+    #user-table {
+        .delete-user i {
+            color: red;
+
+            &:hover {
+                color: $link-hover-color
+            }
+        }
+    }
+}
+#messageModal {
+    .modal-dialog {
+        max-width: 400px;
+    }
+    margin-top: 70px;
+    h5 {
+        text-transform: uppercase;
+    }
+    p {
+        text-align: center;
+        color: $color-blue;
+        padding-bottom: 0px;
+    }
+}
+.add {
+    margin-bottom: 50px;
+    #movie-filds {
+    margin-top: 30px;
+    }
+    #image-preview {
+        display: block;
+        width: 255px;
+        height: 340px;
+    }
+}
+.custom-file-label{
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid  $color-blue;
+}
+.custom-file-label::after{
+    color: #fff;
+    border-radius: 0;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    height: 100%;
+    background-color: $color-blue;
+}
+
+.edit{
+    #movie-filds {
+        margin-top: 30px;
+    }
+    margin-bottom: 50px;
+    .back-to-list{
+        margin-bottom: 60px;
+       a{
+        color:  $color-blue;
+       } 
+    }
+    #image-preview {
+        display: block;
+        width: 255px;
+        height: 340px;
+    }
+}

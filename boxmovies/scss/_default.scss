@@ -1,0 +1,17 @@
+body{
+    background-color: $bg-color;
+    font-family: $font;
+    font-size: 18px;
+}
+a, a:hover, a:focus, a:visited {
+    text-decoration: none;
+    outline: none;
+}
+.message{
+    text-align: center;
+    color: $blue;
+}
+.btn {
+    width: 100%;
+    border-radius: 12px;
+}

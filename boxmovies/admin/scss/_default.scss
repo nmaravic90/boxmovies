@@ -1,0 +1,80 @@
+body{
+    background-color: $body-color;
+    font-family: $font;
+    font-size: 18px;
+}
+a, a:hover, a:focus, a:visited {
+    text-decoration: none;
+    outline: none;
+}
+a {
+    color: $link-color;
+    &:hover{
+        color: $link-hover-color
+    }
+}
+.navbar-nav{
+    a{
+        border-bottom: 1px solid transparent;
+    }
+    a:hover{
+        color: $link-hover-color;
+        border-bottom: 1px solid  $color-blue;
+    }
+    .active{
+        color: $link-hover-color;
+        border-bottom: 1px solid  $color-blue;
+    }
+}
+.pagination{
+    .page-link  {
+        font-size: 22px;
+        border: none;
+        background-color: transparent;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+.fa-edit {
+    color: $color-blue;
+    &:hover {
+        color: $link-hover-color
+    }
+}
+.fa-trash-alt {
+    color: #2ab07b;
+    &:hover {
+        color: $link-hover-color
+    }
+}
+
+
+.spinner-fade{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 9999999;
+}
+.spinner{
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    .spinner-border{
+        padding: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+}
