@@ -91,7 +91,7 @@ $('.content').on('click', '.login .btn-login', function (e) {
             });
     }
 });
-// login /////////////////////////////////////////////////////////////////////////////////////////////////////////
+// logout /////////////////////////////////////////////////////////////////////////////////////////////////////////
 $('.login-user').on('click', '.admin-user', function (e) {
     e.preventDefault();
     var link = $(this).attr('href');
@@ -104,7 +104,7 @@ $('.login-user').on('click', '.admin-user', function (e) {
                 url: 'php/logout.php',
             })
                 .done(function () {
-                    window.location.href = 'index.php';
+                    window.location.href = 'index.html';
                 });
         })
     })
