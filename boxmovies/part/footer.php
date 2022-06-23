@@ -1,3 +1,4 @@
+<?php echo '
 <footer>
     <div class="container">
         <a href="" id="back-to-top"><i class="fas fa-angle-double-up fa-2x"></i></a>
@@ -15,3 +16,4 @@
             <p class="footer-text"><small>Copyright 2019 by Nikola Maravić 284/13</small></p>
         </div>
 </footer>
+'; ?>
